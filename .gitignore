@@ -1,0 +1,6 @@
+android-sdk/
+jdk/
+app/build/
+*.log
+.DS_Store
+Thumbs.db

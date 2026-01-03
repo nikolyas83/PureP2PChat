@@ -1,0 +1,34 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.0.0'
+    }
+}
+
+apply plugin: 'com.android.application'
+
+android {
+    namespace 'com.p2p.chat'
+    compileSdkVersion 33
+    defaultConfig {
+        applicationId "com.p2p.chat"
+        minSdkVersion 21
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt')
+        }
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
